@@ -8,11 +8,15 @@
 #import <UIKit/UIKit.h>
 
 @interface UIImage (CS_Extensions)
-- (UIImage *)imageAtRect:(CGRect)rect;
-- (UIImage *)imageByScalingProportionallyToMinimumSize:(CGSize)targetSize;
-- (UIImage *)imageByScalingProportionallyToSize:(CGSize)targetSize;
-- (UIImage *)imageByScalingToSize:(CGSize)targetSize;
-- (UIImage *)imageRotatedByRadians:(CGFloat)radians;
-- (UIImage *)imageRotatedByDegrees:(CGFloat)degrees;
+// rotate UIImage to any angle
+-(UIImage*)rotate:(UIImageOrientation)orient;
+
+// rotate and scale image from iphone camera
+-(UIImage*)rotateAndScaleFromCameraWithMaxSize:(CGFloat)maxSize;
+
+// scale this image to a given maximum width and height
+-(UIImage*)scaleWithMaxSize:(CGFloat)maxSize;
+-(UIImage*)scaleWithMaxSize:(CGFloat)maxSize
+					quality:(CGInterpolationQuality)quality;
 
 @end;

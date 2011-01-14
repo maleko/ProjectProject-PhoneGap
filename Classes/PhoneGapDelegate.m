@@ -248,8 +248,13 @@ static NSString *gapVersion;
 
 	UIImage *image = [[UIImage alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"Default-%@", deviceType] ofType:@"png"]];
 	
-	UIImage *initialImage = [image imageRotatedByDegrees:180];
-
+	UIInterfaceOrientation orientation = [[UIDevice currentDevice] orientation];
+	UIImage *initialImage = [UIImage alloc];
+	if (orientation == UIInterfaceOrientationLandscapeLeft) {
+		initialImage = [image rotate:UIImageOrientationDown];		
+	} else {
+		initialImage = [[UIImage alloc] initWithCGImage:[image CGImage]];
+	} 
 	imageView = [[UIImageView alloc] initWithImage:initialImage];
 	
 	[initialImage release];
