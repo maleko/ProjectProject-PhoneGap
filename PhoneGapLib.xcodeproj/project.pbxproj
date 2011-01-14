@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		30AA0D5311C0BF650068F0FD /* UIColor-Expanded.h in Headers */ = {isa = PBXBuildFile; fileRef = 30AA0D5111C0BF650068F0FD /* UIColor-Expanded.h */; };
 		30AA0D5411C0BF650068F0FD /* UIColor-Expanded.m in Sources */ = {isa = PBXBuildFile; fileRef = 30AA0D5211C0BF650068F0FD /* UIColor-Expanded.m */; };
+		49F18E8F12DFFF4D00591897 /* UIImage-Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 49F18E8D12DFFF4D00591897 /* UIImage-Extensions.h */; };
+		49F18E9012DFFF4D00591897 /* UIImage-Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F18E8E12DFFF4D00591897 /* UIImage-Extensions.m */; };
 		8887FD661090FBE7009987E8 /* Camera.h in Headers */ = {isa = PBXBuildFile; fileRef = 8887FD261090FBE7009987E8 /* Camera.h */; };
 		8887FD671090FBE7009987E8 /* Camera.m in Sources */ = {isa = PBXBuildFile; fileRef = 8887FD271090FBE7009987E8 /* Camera.m */; };
 		8887FD681090FBE7009987E8 /* Categories.h in Headers */ = {isa = PBXBuildFile; fileRef = 8887FD281090FBE7009987E8 /* Categories.h */; };
@@ -72,6 +74,8 @@
 /* Begin PBXFileReference section */
 		30AA0D5111C0BF650068F0FD /* UIColor-Expanded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor-Expanded.h"; path = "Classes/UIColor-Expanded.h"; sourceTree = "<group>"; };
 		30AA0D5211C0BF650068F0FD /* UIColor-Expanded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor-Expanded.m"; path = "Classes/UIColor-Expanded.m"; sourceTree = "<group>"; };
+		49F18E8D12DFFF4D00591897 /* UIImage-Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage-Extensions.h"; path = "Classes/UIImage-Extensions.h"; sourceTree = "<group>"; };
+		49F18E8E12DFFF4D00591897 /* UIImage-Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage-Extensions.m"; path = "Classes/UIImage-Extensions.m"; sourceTree = "<group>"; };
 		8887FD261090FBE7009987E8 /* Camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Camera.h; path = Classes/Camera.h; sourceTree = "<group>"; };
 		8887FD271090FBE7009987E8 /* Camera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Camera.m; path = Classes/Camera.m; sourceTree = "<group>"; };
 		8887FD281090FBE7009987E8 /* Categories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Categories.h; path = Classes/Categories.h; sourceTree = "<group>"; };
@@ -237,6 +241,8 @@
 				8887FD551090FBE7009987E8 /* OCABRecord.m */,
 				8887FD561090FBE7009987E8 /* OCCFObject.h */,
 				8887FD571090FBE7009987E8 /* OCCFObject.m */,
+				49F18E8D12DFFF4D00591897 /* UIImage-Extensions.h */,
+				49F18E8E12DFFF4D00591897 /* UIImage-Extensions.m */,
 			);
 			name = Util;
 			sourceTree = "<group>";
@@ -315,6 +321,7 @@
 				8887FD9F1090FBE7009987E8 /* Sound.h in Headers */,
 				88BA573D109BB46F00FB5E78 /* Accelerometer.h in Headers */,
 				30AA0D5311C0BF650068F0FD /* UIColor-Expanded.h in Headers */,
+				49F18E8F12DFFF4D00591897 /* UIImage-Extensions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +423,7 @@
 				8887FDA01090FBE7009987E8 /* Sound.m in Sources */,
 				88BA573E109BB46F00FB5E78 /* Accelerometer.m in Sources */,
 				30AA0D5411C0BF650068F0FD /* UIColor-Expanded.m in Sources */,
+				49F18E9012DFFF4D00591897 /* UIImage-Extensions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

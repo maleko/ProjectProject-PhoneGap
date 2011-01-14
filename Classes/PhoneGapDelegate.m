@@ -11,6 +11,7 @@
 #import <UIKit/UIKit.h>
 #import "Movie.h"
 #import "InvokedUrlCommand.h"
+#import "UIImage-Extensions.h"
 
 @implementation PhoneGapDelegate
 
@@ -244,17 +245,13 @@ static NSString *gapVersion;
 	if ([[UIDevice currentDevice].model isEqualToString:@"iPad"]) {
 		[deviceType setString:@"iPad"];
 	}
+
+	UIImage *image = [[UIImage alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"Default-%@", deviceType] ofType:@"png"]];
 	
-	UIImage *initialImage = [[UIImage alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"Default-%@", deviceType] ofType:@"png"]];
-	UIImage *image = [UIImage alloc];
-	if ([[UIDevice currentDevice].model isEqualToString:@"iPad"]) {
-		[image initWithCGImage:[initialImage CGImage] scale:1.0f orientation:UIImageOrientationDown];
-	} else {
-		[image initWithCGImage:[initialImage CGImage]];
-	}
+	UIImage *initialImage = [image imageRotatedByDegrees:180];
 
-	imageView = [[UIImageView alloc] initWithImage:image];
-
+	imageView = [[UIImageView alloc] initWithImage:initialImage];
+	
 	[initialImage release];
 	[image release];
 	
